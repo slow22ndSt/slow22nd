@@ -1,0 +1,122 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app {
+  width: 100%;
+}
+
+/* PageTitle */
+.page-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.page-title .background-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+}
+
+.page-title .background-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-title .fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, transparent 40%, #ffffff 100%);
+}
+
+.page-title h1 {
+  position: relative;
+  margin-left: 200px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a365d;
+  z-index: 1;
+}
+
+/* ProjectCard */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.project-card h2 {
+  color: #1a365d;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-card .description {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.project-card .criteria {
+  margin: 1rem 0 1.5rem 1.5rem;
+  color: #2d3748;
+}
+
+.project-card .criteria li {
+  margin-bottom: 0.5rem;
+}
+
+.project-card .learn-more {
+  display: inline-block;
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.project-card .learn-more:hover {
+  color: #1a4971;
+  text-decoration: underline;
+}
